@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Square:",
+    "price": 100,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_crop_square_48px-512.png",
+    "id": 1
+  },
+  {
+    "title": "Circle",
+    "price": 200,
+    "thumbnail": "https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-circle-outline-512.png",
+    "id": 2
+  },
+  {
+    "title": "Triangle",
+    "price": 700,
+    "thumbnail": "https://cdn1.iconfinder.com/data/icons/material-design-icons-light/24/shape-triangle-512.png",
+    "id": 3
+  },
+  {
+    "title": "Hexagon",
+    "price": "750",
+    "thumbnail": "https://cdn1.iconfinder.com/data/icons/material-design-icons-light/24/shape-hexagon-512.png",
+    "id": 4
+  },
+  {
+    "title": "Rhombus",
+    "price": "999",
+    "thumbnail": "https://cdn1.iconfinder.com/data/icons/material-design-icons-light/24/shape-rhombus-512.png",
+    "id": 5
+  },
+  {
+    "title": "Circle",
+    "price": "1",
+    "thumbnail": "https://www.iconfinder.com/icons/211717/square_icon",
+    "id": 6
+  }
+]

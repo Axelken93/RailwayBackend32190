@@ -1,0 +1,48 @@
+{
+  "entities": {
+    "autores": {
+      "a@t": {
+        "id": "a@t",
+        "nombre": "TestName",
+        "apellido": "TestApellido",
+        "edad": "11",
+        "alias": "TestAlias",
+        "avatar": "https://loremflickr.com/640/480/nature"
+      },
+      "axel@ken": {
+        "id": "axel@ken",
+        "nombre": "Axel",
+        "apellido": "Ken",
+        "edad": "29",
+        "alias": "Axelken",
+        "avatar": "https://loremflickr.com/640/480/business"
+      }
+    },
+    "mensaje": {
+      "1000": {
+        "id": "1000",
+        "mensajes": [
+          {
+            "mensaje": {
+              "texto": "Hola",
+              "date": "01/01/01"
+            },
+            "autor": "a@t"
+          },
+          {
+            "mensaje": {
+              "texto": "como estan?",
+              "date": "01/01/21"
+            },
+            "autor": "a@t"
+          }
+        ],
+        "autores": [
+          "a@t",
+          "axel@ken"
+        ]
+      }
+    }
+  },
+  "result": "1000"
+}

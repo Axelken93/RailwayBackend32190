@@ -1,0 +1,80 @@
+{
+  "entities": {
+    "autores": {
+      "a@t": {
+        "id": "a@t",
+        "nombre": "TestName",
+        "apellido": "TestApellido",
+        "edad": "11",
+        "alias": "TestAlias",
+        "avatar": "https://loremflickr.com/640/480/nature"
+      },
+      "test@email": {
+        "id": "test@email",
+        "nombre": "Quality",
+        "apellido": "Tester",
+        "edad": "100",
+        "alias": "Q&A",
+        "avatar": "https://loremflickr.com/640/480/food"
+      },
+      "test@url": {
+        "id": "test@url",
+        "nombre": "Tester.com",
+        "apellido": "Try",
+        "edad": "99",
+        "alias": "FakeTester",
+        "avatar": "https://url.avatar.com"
+      },
+      "axel@ken": {
+        "id": "axel@ken",
+        "nombre": "Axel",
+        "apellido": "Ken",
+        "edad": "29",
+        "alias": "Axelken",
+        "avatar": "https://loremflickr.com/640/480/business"
+      }
+    },
+    "mensaje": {
+      "1000": {
+        "id": "1000",
+        "mensajes": [
+          {
+            "mensaje": {
+              "texto": "Hola",
+              "date": "01/01/01"
+            },
+            "autor": "a@t"
+          },
+          {
+            "mensaje": {
+              "texto": "como estan?",
+              "date": "01/01/21"
+            },
+            "autor": "a@t"
+          },
+          {
+            "mensaje": {
+              "texto": "Testeando los mensajes",
+              "date": "8/1/2023, 18:36:44"
+            },
+            "autor": "test@email"
+          },
+          {
+            "mensaje": {
+              "texto": "Probando el desafio 12",
+              "date": "27/1/2023, 08:47:32"
+            },
+            "autor": "test@url"
+          }
+        ],
+        "autores": [
+          "a@t",
+          "axel@ken",
+          "test@email",
+          "test@url"
+        ]
+      }
+    }
+  },
+  "result": "1000"
+}

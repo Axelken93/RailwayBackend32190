@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 11</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container-fluid mt-3">
+    <div class="bg-success">
+      <div class="d-flex justify-content-between m-1" id="loginUser"></div>
+    </div>
+
+    <div class="jumbotron">
+      <h1 style="color:blue;">Ingrese datos</h1>
+      <br>
+
+      <form action="/productos" method="post" onsubmit="refreshProducs()">
+
+          <div class="form-group">
+              <label for="title"><b>Nombre</b></label>
+              <input id="title" class="form-control" type="text" name="title" required minlength="1">
+          </div>
+
+          <div class="form-group">
+              <label for="price"><b>Precio</b></label>
+              <input id="price" class="form-control" type="number" name="price" required min="0" max="9999">
+          </div>
+
+          <div class="form-group">
+              <label for="thumbnail"><b>Foto</b></label>
+              <input id="thumbnail" class="form-control" type="text" name="thumbnail" required>
+          </div>
+
+          <button class="btn btn-success mt-3 mb-5">Enviar</button>
+      </form>
+
+      <button onclick="location.href= '/productos/index'" type="button" class="btn btn-dark">Ver Historial</button>
+
+    </div>
+  
+    <div class="jumbotron">
+      <h1>Mi tabla de productos</h1>
+      <div id="listaProductos"></div>
+    </div>
+    <hr>
+    <div class="jumbotron">
+      <h1>Centro de Mensajes</h1>
+      <div id="conversion"></div>
+      <form class="form-inline" onsubmit="return addMessage()" autocomplete="off">
+        <input type="email" id="email" class="form-control my-2 mr-2" placeholder="Ingrese su email" required>
+        <input type="text" id="nombre" class="form-control my-2 mr-2" placeholder="Ingrese su nombre" required>
+        <input type="text" id="apellido" class="form-control my-2 mr-2" placeholder="Ingrese su apellido" required>
+        <input type="number" id="edad" class="form-control my-2 mr-2" placeholder="Ingrese su edad" required>
+        <input type="text" id="alias" class="form-control my-2 mr-2" placeholder="Ingrese su Alias" required>
+        <input type="url" id="avatar" class="form-control my-2 mr-2" placeholder="Ingrese la URL de su avatar" required>
+        <input type="text" id="text" class="form-control my-2 mr-2" placeholder="Cuéntanos algo..." required>
+        <input class="btn btn-primary my-2" type="submit" value="Enviar!">
+      </form>
+  
+      <hr>
+      <div id="messages"></div>
+    </div>
+
+    <hr>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

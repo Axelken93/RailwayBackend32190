@@ -1,0 +1,20 @@
+<h2 style="color:crimson;">HISTORIAL DE PRODUCTOS</h2>
+
+<% if(products.length > 0){ %>
+    <div class="table-responsive">
+        <table class="table table-light">
+            <tr style="color: blue;"> <th>Title</th> <th>Price</th> <th>Thumbnail</th></tr>
+            <% for (const e of products) {%>
+            <tr>
+                <td><%=e.title%></td>
+                <td><%=e.price%></td>
+                <td><img src= <%=e.thumbnail%> style="width: 30px;" ></img></td>
+            </tr>
+            <%};%>
+        </table>
+    </div>
+<% } else{ %>
+    <h3 class="alert alert-danger">no se encontraron datos</h3>
+<% } %>
+
+<button onclick="location.href= '/productos'" type="button" class="btn btn-dark">Ir a cargar productos</button>
