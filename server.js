@@ -149,10 +149,8 @@ app.get('/info', (req, res) => {
         memoria: process.memoryUsage().rss,
         numProcesadores: os.cpus().length
     }
-    // console.log("1) Tarea Bloqueante ----------------->")
-    // console.log(info)
-    // logger.info(info)
-    // res.render('info', {info})
+
+    res.render('info', {info})
 
     const { url, method } = req
     logger.info(`Metodo: ${method}, Ruta: ${url}`)
